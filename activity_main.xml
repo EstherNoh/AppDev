@@ -7,32 +7,51 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/quest"
-        android:layout_width="96dp"
-        android:layout_height="77dp"
-        android:text="0.00"
-        android:textSize="48sp"
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.334" />
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/black"
+        android:scaleType="fitXY"/>
 
     <TextView
-        android:id="@+id/mytime"
-        android:layout_width="102dp"
-        android:layout_height="67dp"
+        android:fontFamily="@font/monng"
+        android:id="@+id/quest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
         android:text="0.00"
-        android:textSize="48sp"
+
+        android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.463" />
+        app:layout_constraintVertical_bias="0.353" />
+
+    <TextView
+        android:fontFamily="@font/monng"
+        android:id="@+id/answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.00"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.483" />
 
     <Button
+        android:fontFamily="@font/monng"
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -45,6 +64,7 @@
         app:layout_constraintVertical_bias="0.677" />
 
     <TextView
+        android:fontFamily="@font/monng"
         android:id="@+id/record"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -58,10 +78,12 @@
         app:layout_constraintVertical_bias="0.573" />
 
     <TextView
+        android:fontFamily="@font/monng"
         android:id="@+id/count"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="참가자 1"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
